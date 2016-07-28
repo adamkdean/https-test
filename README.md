@@ -8,7 +8,7 @@ Testing HTTPS.
     openssl genrsa -des3 -out server.key 1024
 
     # generate cert signing request
-    openssl req -new -key server.key out server.csr
+    openssl req -new -key server.key -out server.csr
 
     # backup private key and then remove passphrase
     cp server.key server.key.orig
